@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Patience</title>
+
+    <style>
+        div {
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  margin-bottom: .5vh;
+}
+div.container {
+  background-color: transparent;
+}
+@keyframes moveHorizontalLinear {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(97vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes moveDownUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moveRighter {
+  0% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(100px);
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+@keyframes {}
+
+div#move-horizontal-stop {
+  background-color: #fafa6e;
+  animation: moveRight 6s linear infinite;
+}
+
+div#animation_one {
+  background-color: #c4ec74;
+  animation: moveRight 7s linear infinite
+}
+
+div#move-horizontal-linear {
+  background-color: #92dc7e;
+  animation: moveRight 8s linear infinite;
+}
+div#move-horizontal-ease {
+  background-color: #64c987;
+  animation: moveRight 9s linear infinite;
+}
+div#special {
+  background-color: #39b48e;
+  animation: moveRight 10s linear infinite;
+}
+div#special_two {
+  background-color: #089f8f;
+  animation: moveRight 11s linear infinite;
+}
+div#special_three{
+  background-color: #08737f;
+  animation: moveRight 12s linear infinite;
+}
+div#special_four {
+  background-color: #215d6e;
+  animation: moveRight 13s linear infinite;
+}
+div#special_five{
+  background-color: #2a4858;
+  animation: moveRight 14s linear infinite;
+}
+div#special_six{
+  background-color: #2a485e;
+  animation: moveRight 15s linear infinite;
+}
+div#special_seven{
+  background-color: #264b63;
+  animation: moveRight 16s linear infinite;
+}
+div#special_eight{
+  background-color: #254e6f;
+  animation: moveRight 17s linear infinite;
+}
+div#special_nine{
+  background-color: #2a4f7a;
+  animation: moveRight 18s linear infinite;
+}
+div#special_ten{
+  background-color: #355084;
+  animation: moveRight 19s linear infinite;
+}
+div#special_eleven{
+  background-color: #44508c;
+  animation: moveRight 20s linear infinite;
+}
+div#special_twelve{
+  background-color: #574e92;
+  animation: moveRight 21s linear infinite;
+}
+div#special_thirteen{
+  background-color: #6b4b96;
+  animation: moveRight 22s linear infinite;
+}
+div#special_fourteen{
+  background-color: #7f4696;
+  animation: moveRight 23s linear infinite;
+}
+div#special_fifteen{
+  background-color: #943f93;
+  animation: moveRight 24s linear infinite;
+}
+div#special_sixteen{
+  background-color: #963683;
+  animation: moveRight 25s linear infinite;
+}
+div#special_seventeen{
+  background-color: #952e73;
+  animation: moveRight 26s linear infinite;
+}
+div#special_eighteen{
+  background-color: #922663;
+  animation: moveRight 27s linear infinite;
+}
+div#special_nineteen{
+  background-color: #8e2054;
+  animation: moveRight 28s linear infinite;
+}
+div#special_twentie{
+  background-color: #881c46;
+  animation: moveRight 29s linear infinite;
+}
+div#special_twentie_one{
+  background-color: #811939;
+  animation: moveRight 30s linear infinite;
+}
+div#special_twentie_two{
+  background-color: #79182d;
+  animation: moveRight 31s linear infinite;
+}
+div#special_twentie_three{
+  background-color: #701822;
+  animation: moveRight 32s linear infinite;
+}
+div#special_twentie_four{
+  background-color: #671818;
+  animation: moveRight 33s linear infinite;
+}
+
+div.inline {
+  display: inline-block;
+}
+/* div#move-vertical-stop {
+  background-color: blue;
+  
+  animation: moveDown 2s linear infinite;
+}
+div#move-vertical-repeat {
+  background-color: green;
+  
+  animation: moveDownUp 2s linear infinite;
+} */
+    </style>
+</head>
+
+<body>
+    
+    <div style="float: left; width: 40%; margin-right: 5vw" class="container">
+<div id="move-horizontal-stop"></div>
+<div id="animation_one"></div>
+<div id="move-horizontal-linear"></div>
+<div id="move-horizontal-ease"></div>
+<div id="special"></div>
+<div id="special_two"></div>
+<div id="special_three"></div>
+<div id="special_four"></div>
+<div id="special_five"></div>
+<div id="special_six"></div>
+<div id="special_seven"></div>
+<div id="special_eight"></div>
+<div id="special_nine"></div>
+<div id="special_ten"></div>
+<div id="special_eleven"></div>
+<div id="special_twelve"></div>
+<div id="special_thirteen"></div>
+<div id="special_fourteen"></div>
+<div id="special_fifteen"></div>
+<div id="special_sixteen"></div>
+<div id="special_seventeen"></div>
+<div id="special_eighteen"></div>
+<div id="special_nineteen"></div>
+<div id="special_twentie"></div>
+<div id="special_twentie_one"></div>
+<div id="special_twentie_two"></div>
+<div id="special_twentie_three"></div>
+<!-- <div id="special_twentie_four"></div> -->
+</div>
+<!-- <div style="float: right; width: 40%;" class="container">
+<div id="move-vertical-stop" class="inline"></div>
+
+<div id="move-vertical-repeat" class="inline"></div> -->
+</div>
+
+
+</body>
+</html>
